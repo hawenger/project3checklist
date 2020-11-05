@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    background-color: yellow;
+}
+body {
+margin: 0, auto;
+min-height: 100vh;
+width: 100%;
+}
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: .5em;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 1em;
+}
+
+
+h1{
+    margin-top: 3em;
+}
