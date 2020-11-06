@@ -25,6 +25,7 @@
     "express-session": "^1.17.1",
     "node": "^15.0.1",
     "passport-cookie": "^1.0.8",
-    "tone": "^14.7.58"
+    "tone": "^14.7.58",
+    "uniqid": "^5.2.0"
   }
 }
