@@ -5,34 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
     <script src="https://unpkg.com/tone"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
     <script src="https://unpkg.com/p5.createloop@0.1.0/dist/p5.createloop.js"></script> 
+    <script src="https://unpkg.com/js-markov/dist/markov.js"></script>
+    <script src="https://unpkg.com/purpl-markov-chain/index.js"></script>
     
     
     <title>Checklist</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="grid-container">
-            <div class="grid grid-one">
-                <h1>THE CREATION OF ROBERT</h1>
-            </div>
-            <div class="grid grid-two">
-                <label for=""><input type="checkbox"> Build Robert out CSS<br><br>Use Cuboids<a href="https://css-tricks.com/css-in-3d-learning-to-think-in-cubes-instead-of-boxes/"></a></label>
-                
-                <label for=""><input type="checkbox" checked> Get tonemaker.js sounding</label>
-                <label for=""><input type="checkbox" checked> Build cookie for user auth</label>
-                <label for=""><input type="checkbox">Mongo DB</label>
-                <label for=""><input type="checkbox">Create-React-App</label>
-                <label for=""><input type="checkbox">States & Props</label>
-                <label for=""><input type="checkbox">Function robertSings</label>
-                <label for=""><input type="checkbox">Heroku</label>
-                <label for=""><input type="checkbox">Animate Robert</label>
-                <button class="soundbtn" type="button">CLICK ME</button>
-            </div>
-
-        </div>
-    </div>
+    <a-scene>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-sky color="#ECECEC"></a-sky>
+      </a-scene>
     <script type="text/javascript" src="tonemaker.js"></script>
     <script type="text/javascript" src="cookies.js"></script>
 </body>

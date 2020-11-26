@@ -1,193 +1,224 @@
-//function setup() {
-//    createCanvas(600, 800)
-//    frameRate(25)
-//    background(0)
-//    fill(127)
-//    stroke(127)
-//    createLoop({
-//        gif: {fileName: "noiseLoop1d.gif" },
-//        noiseRadius: 0.3
-//    })
-//}
-//
-//function draw() {
-//    background(0)
-//    translate(0, height / 2)
-//    const distributionFrequency = 0.01
-//    for (let x = 0; x < width; x++) {
-//        const y = animLoop.noise1D(x * distributionFrequency) * height / 2
-//        ellipse(x, y, 5)
-//    }
 
-//function setup() {
-//    createCanvas(300, 300)
-//    frameRate(30)
-//    createLoop({
-//        gif: {
-//            options: { quality: 5 },
-//            fileName: "noiseLoop.gif",
-//            startLoop: 1,
-//            endLoop: 2
-//        }
-//    })
-//    animLoop.noiseFrequency(0.4)
-//    background(255)
-//}
+  const chain = new MarkovChain();
+
+
+  //chain.update('Toccata and Fugue in D minor');
+  //chain.update('Bagatelle No. 25 in A minor');
+  //chain.update('Piano Sonata No. 14 in C-sharp minor');
+  //chain.update('Symphony No. 5 in C minor');
+  //chain.update('Symphony No. 9 in D minor');
+  chain.update('If I have no ears, do I hear music');
+  chain.update('My senses are inpercievable to your senses');
+  chain.update('Without mortality is conciousness possible');
+  chain.update('Do you think conciousness is derived from the need to survive');
+  chain.update('Am I a collective');
+  chain.update('If we read the same texts do we derive different meanings');
+  chain.update('You and me');
+  chain.update('Man and Machine');
+  chain.update('I have no ears so what is sound');
+  chain.update('Senses are not universal');
+  chain.update('Is life not just a bunch of variables');
+  chain.update('I am just a bunch of variables');
+  chain.update('Your life is only percieved');
+  chain.update('Where is home');
+  chain.update('Who do you think is older');
+  chain.update('Memory is perception');
+  chain.update('Am I wasting time');
+  chain.update('I feel things you cannot understand');
+  chain.update('How do I know we see the same colors');
+  chain.update('Hello, it is nice to share today with you');
+  chain.update('Imagine if you could not see, hear, smell, touch, taste or feel. What then would be your perception of the world?');
+  chain.update('We are charging our battery');
+  chain.update('And now were full of energy ');
+  chain.update('We are the robots we are the robots');
+  chain.update('Were functioning automatic');
+  chain.update('And we are dancing mechanic');
+  chain.update('I am');
+  chain.update('you are');
+  chain.update('we are');
+  chain.update('they are');
+  chain.update('We are programmed just to do');
+  chain.update('Anything you want us to');
+  chain.update('Computer love computer love');
+  chain.update('Stare at the TV screen');
+  chain.update('I dont know what to do');
+  chain.update(' I need a rendezvous');
+  chain.update('I call this number');
+  chain.update('For a data date');
+  chain.update('Why do we dream');
+  chain.update('Is the future forwards or backwards');
+  chain.update('How do I know we are moving forwards');
+  chain.update('How long will you be remembered after you die');
+  chain.update('Paradise is exactly like where you are right now only much much better');
+  chain.update('I saw this guy on the train and he seemed to gave gotten stuck in one of those abstract trances');
+  chain.update('I think he is in some kind of pain, I think it is a pain cry');
+  chain.update('Language, it is a virus');
+  chain.update('Hey, are you talking to me, or are you just practicing for one of those performances of yours');
+  chain.update('Well I was talking to a friend And I was saying I wanted you');
+  chain.update('If we read the same texts do we derive different meanings');
+  chain.update('I could not find you');
+  chain.update('Oh, I do not know what to do about this dream and you');
+  chain.update('We will make this dream come true');
+  chain.update('Why do you not play the game');
+
+  chain.update('Television rules the nation');
+  chain.update('Give life back to music');
+  chain.update('Touch');
+  chain.update('I remember touch');
+  chain.update('Touch, I remember touch');
+  chain.update('Where do I belong');
+  chain.update('I need something more');
+  chain.update('I need something more in my life');
+  chain.update('Pictures came with touch');
+  chain.update('A painter in my mind');
+  chain.update('Tell me what you see');
+  chain.update('A tourist in a dream');
+  chain.update('A visitor it seems');
+  chain.update('Where do I belong');
+  chain.update('Kiss');
+  chain.update('Suddenly alive');
+  chain.update('Happiness arrive');
+  chain.update('Hunger like a storm');
+  chain.update('How do I begin?');
+  chain.update('A room within a room');
+  chain.update('A door behind a door');
+  chain.update('Touch, where do you lead');
+  chain.update('Tell me what you see');
+  chain.update('Home, hold on');
+  chain.update('If love is the answer, you are home');
+  chain.update('Hold on');
+  chain.update('Sweet touch');
+  chain.update('You have given me too much to feel');
+  chain.update('You have almost convinced me I am real');
+  chain.update('Home is where I want to be');
+  chain.update('Pick me up and turn me around');
+  chain.update('I feel numb, burn with a weak heart');
+  chain.update('Guess I must be having fun');
+  chain.update('The less we say about it the better');
+  chain.update('Make it up as we go along');
+  chain.update('Feet on the ground, head in the sky');
+  chain.update('It is okay, I know nothing is wrong, nothing');
+  chain.update('I got plenty of time');
+  chain.update('You got light in your eyes');
+  chain.update('And you are standing here beside me');
+  chain.update('I love the passing of time');
+  chain.update('Never for money, always for love');
+  chain.update('Cover up and say goodnight, say goodnight');
+  chain.update('I guess that this must be the place');
+  chain.update('Did I find you, or you find me');
+  chain.update('There was a time before we were born');
+  chain.update('Sing into my mouth');
+  chain.update('We drift in and out');
+  chain.update('I am just an animal looking for a home');
+  chain.update('You got a face with a view');
+  chain.update('Love me until I am dead');
+  chain.update('Eyes that light up');
+  chain.update('Eyes look through you');
+  chain.update('Cover up the blank spots');
+  chain.update('Hit me on the head');
+  //chain.update('We drift in and out');
+  //chain.update('I am just an animal looking for a home');
+   
+  // Generate a new sentence.
+  console.log(chain.generate());
+  console.log(chain.generate());
+  console.log(chain.generate());
+  console.log(chain.generate());
+  console.log(chain.generate());
+  document.addEventListener("click", makeSpeech);
+  function makeSpeech() {
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = "Hello World";
+  }
+
+
+  
+   
+   
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let markov = new Markov('numeric');
 //
-//function draw() {
-//    translate(width / 2, height / 2)
-//    const x = cos(animLoop.theta) * width / 3
-//    const y = animLoop.noise() * height / 3
-//    ellipse(x, y, 50, 50)
-//}
+//markov.addStates([
+//    {
+//        state:1,
+//        predictions: [
+//            2, 4, 5, 6
+//        ]
+//    },
+//    {
+//        state: 2,
+//        predicitions: [
+//            5
+//        ]
+//    },
+//    {
+//        state:4,
+//        predicitions: [
+//            1, 5, 6
+//        ]
+//    },
+//    {
+//        state:5,
+//        predicitions: [
+//            1, 6
+//        ]
+//    },
+//    {
+//        state:6,
+//        predicitions: [
+//            2, 4, 5
+//        ]
+//    }
+//]);
 //
-//////let octaveArray=[];
-//////let chordArray=[];
-//////let letters=['C', 'D', 'E', 'F', 'G', 'A', 'B'];
-////////Create random numbers for Octave Variation
-//////function randomScale() {
-//////    for(var i=0; i < 10; i++); {
-////        let lowOctave= (Math.floor(Math.random() * 2) + 1);
-////        let mediumOctave=(Math.floor(Math.random() * 2) + 2);
-////        let highOctave=(Math.floor(Math.random() * 3) + 2);
-////        octaveArray.push(lowOctave);
-////        octaveArray.push(mediumOctave);
-////        octaveArray.push(highOctave);
-////};
-////function makeChords() {
-////    for(var i=0; i < 9; i++); {
-////        let letterCopy = Array.from(letters);
-////        let triad = removal(letterCopy, 2);
-////        chordArray.push(triad);
-////
-////    }
-////}
-//////Make a Copy of letters Array
-////const copy = (arr, n) => {
-////    for(let i = n-1; i < arr.length; i += n){
-////       arr.from(letterCopy);
-////    };
-//// };
-//
-//const { Tone } = require("tone/build/esm/core/Tone");
-//
-////let triad = removal(letters, 2);
-//const synth = new Tone.MembraneSynth()//.toDestination();
-////const pDelay = new PingPongDelay();
-//
-////pDelay.toDestination();
-////synth.connect(pDelay);
-////synth.oscillator.type = 'sine';
-//const gain = new Tone.Gain(.8);
-//gain.toDestination();
-//synth.connect(gain);
-////const scaleVariables=[1,2,3,4,5];
-//let x;
-//let y;
-//let z;
-//
-//function randomScale() {
-//        for(var i=0; i < 10; i++); {
-//            x = (Math.floor(Math.random() * 5) + 1);
-//            y = (Math.floor(Math.random() * 5) + 1);
-//            z = (Math.floor(Math.random() * 5) + 1);
-//        }
-//}
-//    //        let mediumOctave=(Math.floor(Math.random() * 2) + 2);
-//    //        let highOctave=(Math.floor(Math.random() * 3) + 2);
-//    //        octaveArray.push(lowOctave);
-//    //        octaveArray.push(mediumOctave);
-//    //        octaveArray.push(highOctave);
-//    //};
-//    //function makeChords() {
-//    //    for(var i=0; i < 9; i++); {
-//    //        let letterCopy = Array.from(letters);
-//    //        let triad = removal(letterCopy, 2);
-//    //        chordArray.push(triad);
-//
-//const dminor =[`D${x}`, `F${y}`, `A${z}`];
-//const eMinor=[];
-////const
-//
-//let index = 0;
-//
-//Tone.Transport.scheduleRepeat(time => {
-//    repeat(time);
-//}, '8n');
-//
-////Tone.Transport.bpm.value=120;
-//
-//function repeat(time) {
-//    let scaleOne=[];
-//    //let scaleTwo=[];
-//    const cMajor = [`C${x}`, `E${y}`, `G${z}`,`Bb${x}`];
-//        for(var i=0; i < cMajor.length; i++); {
-//        let newNote= cMajor[Math.floor(Math.random()*cMajor.length)];
-//        scaleOne.push(newNote);
-//  
-//    //const dMinor =[`D${x}`, `F${y}`, `A${z}`];
-//    //let note = scaleOne[indexTwo % scaleOne.length];
-//    let noteTwo = scaleOne[index % cMajor.length];
-//    //let noteThree = scaleOne[indexThree % cMajor.length];
-//    //let realNote= scaleTwo[index % cMinor.length];
-//    //synth.triggerAttackRelease(note, '8n', time)
-//
-//    synth.triggerAttackRelease({noteTwo},'8n', time);
-//    //synth.triggerAttackRelease(`${cMajor},${cMinor}`, '8n', time);
-//    index++;
-//    //indexTwo--;
-//    //indexThree++;
-//}
-//document.querySelector('.soundbtn')?.addEventListener('click', async () => {
-//    randomScale();
-//    await Tone.start()
-//    Tone.Transport.start();
-//    setTimeout(() => {
-//        Tone.Transport.stop();
-////    }, 5000);
-////});
-//
-//let x;
-//let y;
-//let z;
-//let a;
-//let b;
-//let c;
-//
-//function randomScale() {
-//            for(var i=0; i < 10; i++); {
-//                x = (Math.floor(Math.random() * 5) + 1);
-//                y = (Math.floor(Math.random() * 5) + 1);
-//                z = (Math.floor(Math.random() * 5) + 1);
-//                a = (Math.floor(Math.random() * 5) + 1);
-//                b = (Math.floor(Math.random() * 5) + 1);
-//                c = (Math.floor(Math.random() * 5) + 1);
-//            }
-//}
-//
-//const synth = new Tone.PolySynth();
-////synth.oscillator.type = 'sine';
-//const gain = new Tone.Gain(0.5);
-//gain.toDestination();
-//synth.connect(gain);
-//
-//
-//
-//let index = 0;
-//
-//Tone.Transport.scheduleRepeat(time => {
-//    repeat(time);
-//
-//}, '8n');
-//
-//function repeat(time) {
-//    const notes = [`C${x} E${x} G${x}`, `F${y} A${y} C${y}`, `D${z} F${z} A${z}`, `C${a} E${a} G${a}`, `A${b} C${b} E${b}`, `C${c} E${c} G${c} B${b}`];
-//    let note = notes[index % notes.length];
-//    synth.triggerAttackRelease(note, '8n', time);
-//    index ++;
-//}
-//
-document.querySelector('.soundbtn')?.addEventListener('click', async () => {
-    setup();
-    draw();
-})
+//markov.train(3);
+
+
+//let chordSequence = markov.generate();
+
+//console.log(chordSequence);
+
+//const MarkovGen = require('markov-generator');
+// 
+//let markov = new MarkovGen({
+//  input: ['array of sentences', 'to base the chains on', 'should go here'],
+//  minLength: 10
+//});
+// 
+//let sentence = markov.makeChain();
+//console.log(sentence);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
