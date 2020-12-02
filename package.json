@@ -25,11 +25,14 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "js-markov": "^3.0.3",
+    "markov-chains": "^1.0.2",
     "markov-decision-chain": "^1.0.4",
     "markov-generator": "^1.2.3",
     "node": "^15.0.1",
     "passport-cookie": "^1.0.8",
+    "rita": "^1.3.94",
     "tone": "^14.7.58",
+    "uniq": "^1.0.1",
     "uniqid": "^5.2.0"
   }
 }

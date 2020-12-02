@@ -4,6 +4,10 @@ const uniqid = require('uniqid');
 const Markov = require('js-markov');
 const MarkovGen = require('markov-generator');
 
+//let rita = require('rita');
+//let rs = rita.RiString("The elephant took a bite!");
+//console.log(rs.features());
+
 
 const PORT = process.env.PORT || 8080;
 
@@ -25,4 +29,6 @@ app.listen(PORT, function() {
     
     
   });
+
+  //browserify main.js -o bundle.js
   
