@@ -1,5 +1,5 @@
 let robertsCookie;
-let returning = "";
+let returningUser = "";
 
 function generateUserId() {
     let userId = new Uint32Array(1);
@@ -28,12 +28,12 @@ function readCookie() {
         writeCookie();
         console.log(document.cookie);
         robertsCookie = document.cookie
-        returning = false
-        //console.log(returning)
+        returningUser = false
+        //console.log(returningUser)
     } else {
         console.log("welcome back")
-        returning = true;
-        //console.log(returning)
+        returningUser = true;
+        //console.log(returningUser)
     }
 }
 
