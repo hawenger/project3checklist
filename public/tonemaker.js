@@ -1,4 +1,6 @@
-
+const button = document.querySelector('#btn');
+const buttonStop = document.querySelector('#btnStop');
+  
   const chain = new MarkovChain();
 
 
@@ -118,20 +120,49 @@
   chain.update('Hit me on the head');
   //chain.update('We drift in and out');
   //chain.update('I am just an animal looking for a home');
-   
+
+var msg = new SpeechSynthesisUtterance();
+let refrain;
+let song = true;
+
+//function generateSongLyrics() {
+//  let a = chain.generate();
+//  let b = chain.generate();
+//  let c = chain.generate();
+//  song = `${a}  ${b}  ${c}`
+//}
+
+function speakRobert() {
+  for (let i = 0; i < 5; i++) {
+    let line = new SpeechSynthesisUtterance();
+    line.text = chain.generate();
+    window.speechSynthesis.speak(line);
+    line.onend = function() { 
+      if(song==true) {speakRobert();}
+      else {
+        window.speechSynthesis.cancel();
+      }
+    }
+  }
+}
   // Generate a new sentence.
   console.log(chain.generate());
   console.log(chain.generate());
   console.log(chain.generate());
   console.log(chain.generate());
   console.log(chain.generate());
-  document.addEventListener("click", makeSpeech);
-  function makeSpeech() {
-  var msg = new SpeechSynthesisUtterance();
-  msg.text = "Hello World";
-  }
 
+button.addEventListener('click', () => {
+  resetSong();
+  speakRobert();
+})
 
+buttonStop.addEventListener('click', () => {
+  song=false;
+});
+function resetSong() {
+  song=true;
+}
   
    
    
